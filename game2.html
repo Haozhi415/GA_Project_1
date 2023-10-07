@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./game2.css">
+    <title>Smashing Pumpkins!</title>
+</head>
+<body>
+<div id="content">
+    <div class="left_part">
+    <div id="board">
+    <div class="row1">
+        <div class="cell" id="cell0">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+        <div class="cell" id="cell1">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+        <div class="cell" id="cell2">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+    </div>
+    <div class="row2">
+        <div class="cell" id="cell3">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+        <div class="cell" id="cell4">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+        <div class="cell" id="cell5">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+    </div>
+    <div class="row3">
+        <div class="cell" id="cell6">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+        <div class="cell" id="cell7">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+        <div class="cell" id="cell8">
+            <img class="pumpkin_image" src="./pumpkin.png" style="display: none" draggable="false";>
+            <img class="splatter_image" src="./splatter.png" style="display: none;" draggable="false">
+            <img class="bomb_image" src="./bomb.png" style="display: none;" draggable="false">
+            <img class="explosion_image" src="./explosion.png" style="display: none;" draggable="false">
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="center_part">
+    <div class="gamestuff">
+        <div class="panel1">
+            <img id="pumpkin_pic" src="./pumpkin.png" alt="Pumpkin" draggable="false">
+            <p>+1 Streak</p>
+        </div>
+
+        <div class="panel2">
+            <img id="bomb_pic" src="./bomb.png" alt="Bomb" draggable="false">
+            <p>Game Over!</p>
+        </div>
+    </div>
+
+    <div id="countdown">Game starting in: <span>10</span> seconds</div>
+
+    <div id="username">Player: <span></span></div>
+
+    <div id="streak">Streak: <span>0</span></div>
+
+    <div>
+        <button id="restart" onclick="location.reload(true);">Restart Game</button>
+    </div>
+
+    <div>
+        <button id="welcome_page" onclick="redirectToWelcomePage()">Back to Welcome Page</button>
+    </div>
+</div>
+
+<div class="right_part">
+    <div id="leaderboard_streak">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboardStreak-list"></ul>
+    </div>
+</div>
+</div>
+
+    <script defer src="./game2.js"></script>
+</body>
+</html>

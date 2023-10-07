@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background:url(./gamebackground.png);
+    background-size: cover;
+    background-position: center;
+    font-family: Comic Sans MS;
+    font-size: x-large;
+}
+
+#content {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 1000px;
+}
+
+.left_part {
+    
+    margin-top: 50px;
+}
+
+.center_part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
+.right_part {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.gamestuff {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.panel2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pumpkin_pic, #bomb_pic {
+    height: 100px;
+    width: 100px;
+}
+
+#board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.row1, .row2, .row3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 2.5px solid black;
+    cursor: pointer;
+    background:url(./hole.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.pumpkin_image, .splatter_image, .bomb_image, .explosion_image {
+    width: 100px;
+    height: 100px;
+}
+
+#restart {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 200px;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#welcome_page{
+    margin-top: 0px;
+}
